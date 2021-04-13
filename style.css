@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    text-align: center;
+    margin-top: 15%;
+}
+
+header span{
+    color: rgb(228, 180, 24);
+}
+
+#randomNumber{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    color: rgb(95, 95, 228);
+    font-weight: bold;
+}
+
+.visible{
+    visibility: hidden;
+}
+
+#userAnswer{
+    position: absolute;
+    margin-left: 46%;
+    scale : 2;
+
+}
+
+#sombre{
+    position: absolute;
+}
+
+#infos{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    position: relative;
+    margin-top: 5%;
+}
+
+#essais{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+}
