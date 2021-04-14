@@ -4,7 +4,7 @@ const body = document.querySelector("body")
 const infos = document.querySelector("#infos")
 const button = document.querySelector("#envoyer")
 const tryNumber = document.querySelector("#essais")
-
+const retry = document.querySelector("#retry")
 
 
 chiffreAleatoire = Math.floor(Math.random() * 1000)
@@ -21,6 +21,8 @@ reponse.onkeypress = function(event) {
         randomNumber.classList.toggle("visible")
         nombreEssais = nombreEssais - 1
         tryNumber.innerHTML = nombreEssais
+        alert("Vous avez gagné")
+        reponse.value = ""
         if (nombreEssais == 0){
             chiffreAleatoire = Math.floor(Math.random() * 1000)
             randomNumber.innerHTML = chiffreAleatoire
@@ -45,6 +47,7 @@ reponse.onkeypress = function(event) {
             tryNumber.innerHTML = nombreEssais
             infos.innerHTML = "C'est parti !"
             infos.style.color = "white"
+            reponse.value = ""
         }
     }
     else if (reponse.value > chiffreAleatoire){
@@ -61,6 +64,7 @@ reponse.onkeypress = function(event) {
             tryNumber.innerHTML = nombreEssais
             infos.innerHTML = "C'est parti !"
             infos.style.color = "white"
+            reponse.value = ""
     }
     }
     else {
@@ -68,4 +72,3 @@ reponse.onkeypress = function(event) {
     }
 
 }
-
